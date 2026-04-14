@@ -16,8 +16,10 @@ return {
     -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
     lazy = false,
   },
-
   {
     { 'akinsho/toggleterm.nvim', version = '*', config = true },
+  },
+  {
+    vim.keymap.set('n', '<leader>o', '<cmd>Oil<CR>', { desc = 'Oil' }),
   },
 }
